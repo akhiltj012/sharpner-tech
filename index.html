@@ -1,58 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <title>Item Lister</title>
-</head>
-<body>
-  <header id="main-header" class="bg-success text-white p-4 mb-3">
-    <div class="container">
-      <h1 id="header-title">Item Lister <span style="display:none">123</span></h1>
-    </div>
-  </header>
-  <div class="container">
-   <div id="main" class="card card-body">
-    <h2 class="title">Add Items</h2>
-    <form class="form-inline mb-3">
-      <input type="text" class="form-control mr-2">
-      <input type="submit" class="btn btn-dark" value="Submit">
-    </form>
-    <h2 class="title">Items</h2>
-    <ul id="items" class="list-group">
 
-      <li style="font-weight:700 ;" class="list-group-item">Item 1</li>
-      <li  style="font-weight:700 ;" class="list-group-item">Item 2</li>
-      <li style="background-color: green; color: white;" class="list-group-item">Item 3</li>
-      <li  style="font-weight:700 ;" class="list-group-item">Item 4</li>
-    </ul>
-   </div>
-  </div>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+   <div id="main">
+
+    <div id="inside">
+
+     <div><h2>BOOK A CALL</h2>
+
+          <P>BOOK A CALL SLOT AND OUR REPRESENTATIVE WILL CALL YOU WITHIN 1 HR IN A SELECTED TIME</P></div>
+
+          
+
+     <div> <p>Name:-</p>
+
+          <input id="name" type="text"></input></div>
+
+     <div>
+
+        <p>Email:-</p>
+
+          <input id="email" type="text"></input>
+
+     </div>
+
+     <div>
+
+        <p>Phone:-</p>
+
+          <input id="phone" type="text"></input>
+
+     </div>
+
+     <div>
+
+        <p>Time for call:-</p>
+
+          <input type="datetime-local" id="time"  ></input>
+
+     </div>
+
+     <div>
+
+        <button id="btn"> GET A CALL </button>
+
+     </div>
+
+    </div>
+
+   </div> 
 
 </body>
+
+<script src="index.js"></script>
+
 </html>
-<script>
-let t = document.querySelectorAll(".list-group-item");
-for(let i=0;i<t.length;i++){
-  let btn = document.createElement("button")
-  btn.innerText="Delete"
-  btn.addEventListener("click",click)
-  t[i].append(btn)
-  function click(){
-    t[i].style.display="none";
-}
-     
 
-    
-    
-    
-    
-  
-  
-}
-
-
-
-</script>

@@ -1,0 +1,92 @@
+#main{
+
+    height: 1000px;
+
+    width: 100%;
+
+    border: solid red;
+
+    display: flex;
+
+    justify-content: center;
+
+    background-image: url("https://img.freepik.com/free-photo/maple-leaf-border-background-orange-watercolor-autumn-season_53876-128735.jpg?w=2000");
+
+
+
+}
+
+#inside{
+
+    height: 600px;
+
+    width: 50%;
+
+    border: solid green;
+
+}
+
+#inside input{
+
+    height: 40%;
+
+    width: 90%;
+
+    margin-left: 5%;
+
+}
+
+#inside button{
+
+    color: black;
+
+    background-color: orange;
+
+    width: 100%;
+
+    height: 50%;
+
+    margin-top: 50px;
+
+}
+
+
+
+#inside div:nth-child(1){
+
+    height: 25%;
+
+    border: solid blue;
+
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 12px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#inside div:nth-child(1) h2{
+
+ color: orange;
+
+ font-size: 25px;
+
+}
+
+#inside div{
+
+    height: 13%;
+
+    border: solid blue;
+
+    width: 100%;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+}
+
