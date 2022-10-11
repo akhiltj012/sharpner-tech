@@ -15,20 +15,44 @@
   </header>
   <div class="container">
    <div id="main" class="card card-body">
-    <h2 class="title" style="font-weight:700 ; color: green;" >Add Items</h2>
+    <h2 class="title">Add Items</h2>
     <form class="form-inline mb-3">
       <input type="text" class="form-control mr-2">
       <input type="submit" class="btn btn-dark" value="Submit">
     </form>
-    <h2 class="title" style="border: solid black;">Items</h2>
+    <h2 class="title">Items</h2>
     <ul id="items" class="list-group">
-      <li class="list-group-item">Item 1</li>
-      <li class="list-group-item">Item 2</li>
-      <li class="list-group-item">Item 3</li>
-      <li class="list-group-item">Item 4</li>
+
+      <li style="font-weight:700 ;" class="list-group-item">Item 1</li>
+      <li  style="font-weight:700 ;" class="list-group-item">Item 2</li>
+      <li style="background-color: green; color: white;" class="list-group-item">Item 3</li>
+      <li  style="font-weight:700 ;" class="list-group-item">Item 4</li>
     </ul>
    </div>
   </div>
 
 </body>
 </html>
+<script>
+let t = document.querySelectorAll(".list-group-item");
+for(let i=0;i<t.length;i++){
+  let btn = document.createElement("button")
+  btn.innerText="Delete"
+  btn.addEventListener("click",click)
+  t[i].append(btn)
+  function click(){
+    t[i].style.display="none";
+}
+     
+
+    
+    
+    
+    
+  
+  
+}
+
+
+
+</script>
