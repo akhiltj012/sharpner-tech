@@ -90,3 +90,8 @@
 
 }
 
+#arr{
+    height: 100px;
+    width: 50%;
+    border: solid red;
+}
