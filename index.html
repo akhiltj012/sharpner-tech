@@ -1,74 +1,42 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Document</title>
-
     <link rel="stylesheet" href="index.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
 
-   <div id="main">
+    <div id = main> 
+        <h1>Expense Tracker</h1>
+        <div id="sub">
+            <label>Expense amount:</label>
+            <input type="number" placeholder="expense amount" id="exp"/>
+            <label>Description:</label>
+            <input type="text" placeholder="description" id="des"/>
+            <label>Type of expense:</label>
+            <select id="type" >  
+                <option value="food" >food</option> 
+                <option value="travel">travel</option>  
+                <option value="health">health</option>
+                <option value="entertainment">entertainment</option>
+            </select>
+            <button id="submit" type="submit">Add expense</button>
+    
+        </div>
+        <div id="sub2">
 
-    <div id="inside">
+        </div>
+        <div id="sub1">
 
-     <div><h2>BOOK A CALL</h2>
-
-          <P>BOOK A CALL SLOT AND OUR REPRESENTATIVE WILL CALL YOU WITHIN 1 HR IN A SELECTED TIME</P></div>
-
-          
-
-     <div> <p>Name:-</p>
-
-          <input id="name" type="text"></input></div>
-
-     <div>
-
-        <p>Email:-</p>
-
-          <input id="email" type="text"></input>
-
-     </div>
-
-     <div>
-
-        <p>Phone:-</p>
-
-          <input id="phone" type="text"></input>
-
-     </div>
-
-     <div>
-
-        <p>Time for call:-</p>
-
-          <input type="datetime-local" id="time"  ></input>
-
-     </div>
-
-     <div>
-
-        <button id="btn"> GET A CALL </button>
-
-     </div>
+        </div>
+       
 
     </div>
-
-   </div> 
-
+    
 </body>
-
-<script src="index.js"></script>
-
 </html>
-
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="index.js" ></script>
